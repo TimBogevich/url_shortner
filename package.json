@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "body-parser": "^1.20.1",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
+    "randomstring": "^1.2.2",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",

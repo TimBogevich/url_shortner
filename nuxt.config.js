@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+import bodyParser from 'body-parser'
+
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -50,7 +52,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -68,6 +70,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   serverMiddleware: [
+    bodyParser.json(),
     {path: '/api/proccess-url', handler: '~/api/short-url.js'}
   ]
 }
