@@ -6,6 +6,8 @@
           <v-text-field 
           v-if="!shorten"
           v-model="urlOrig"
+          :background-color="isUrlValid || !urlOrig  ? '': 'warning'"
+          color="red'"
           solo  label="insert your URL"></v-text-field>
           <v-text-field
           v-else
@@ -15,7 +17,7 @@
         <v-row class="ma-0 align-center">
           <v-checkbox
             v-if="!shorten"
-            :disabled='!urlOrig'
+            :disabled='!isUrlValid'
             label="Shorten URL"
             :value="false"
             readonly
@@ -49,7 +51,7 @@
 
 <script lang='ts'>
 import { defineComponent } from 'vue'
-
+import isUrl from 'is-url-superb';
 
 export default defineComponent({
 
@@ -67,11 +69,14 @@ export default defineComponent({
     },
     urlShorten() {
       return new URL(this.encryptedUrl, this.server)
+    },
+    isUrlValid() {
+      return isUrl(this.urlOrig)
     }
   },
   methods: {
     async processUrl() {
-      if (!this.urlOrig) return
+      if (!this.isUrlValid) return
       try {
         const {data} = await this.$axios.post('api/encode-url', {urlOrig: this.urlOrig})
         this.encryptedUrl = data
