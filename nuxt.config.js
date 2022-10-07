@@ -73,5 +73,6 @@ export default {
     bodyParser.json(),
     {path: '/api/encode-url', handler: '~/api/encode-url.js'},
     {path: '/api/decode-url', handler: '~/api/decode-url.js'},
+    {path: '/api/url', handler: '~/api/all-url.js'},
   ]
 }

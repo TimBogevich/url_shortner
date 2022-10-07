@@ -1,11 +1,11 @@
 <template>
-  <v-app>
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
-    </v-main>
-  </v-app>
+<v-app>
+  <v-main>
+    <v-container>
+      <Nuxt />
+    </v-container>
+  </v-main>
+</v-app>
 </template>
 
 <script>
@@ -16,8 +16,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
+      items: [{
           icon: 'mdi-apps',
           title: 'Welcome',
           to: '/',

@@ -9,7 +9,12 @@ const getUrl = (id) => {
 }
 
 
+const getAllUrl = (id) => {
+  return Object.values(store)
+}
+
 export default {
   setUrl,
   getUrl,
+  getAllUrl,
 }

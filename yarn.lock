@@ -5135,11 +5135,6 @@
   dependencies:
     "has-symbols" "^1.0.2"
 
-"is-url-superb@^6.1.0":
-  "integrity" "sha512-LXdhGlYqUPdvEyIhWPEEwYYK3yrUiPcBjmFGlZNv1u5GtIL5qQRf7ddDyPNAvsMFqdzS923FROpTQU97tLe3JQ=="
-  "resolved" "https://registry.npmjs.org/is-url-superb/-/is-url-superb-6.1.0.tgz"
-  "version" "6.1.0"
-
 "is-weakref@^1.0.2":
   "integrity" "sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ=="
   "resolved" "https://registry.npmjs.org/is-weakref/-/is-weakref-1.0.2.tgz"
@@ -8749,6 +8744,11 @@
     "loader-utils" "^2.0.0"
     "mime-types" "^2.1.27"
     "schema-utils" "^3.0.0"
+
+"url-validation@^2.1.0":
+  "integrity" "sha512-DGEik6FuB31DEXnpGRDtDr6Re8GIzsWeXOCtN8lQP9bS0a9sa7MfOf5LDdKRSzipVckyU+DsEOJ3dIow+Gd/dA=="
+  "resolved" "https://registry.npmjs.org/url-validation/-/url-validation-2.1.0.tgz"
+  "version" "2.1.0"
 
 "url@^0.11.0":
   "integrity" "sha512-kbailJa29QrtXnxgq+DdCEGlbTeYM2eJUxsz6vjZavrCYPMIFHMKQmSKYAIuUK2i7hgPm28a8piX5NTUtM/LKQ=="
