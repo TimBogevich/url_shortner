@@ -71,13 +71,15 @@ export default defineComponent({
   },
   methods: {
     async processUrl() {
+      if (!this.urlOrig) return
       try {
-        const {data} = await this.$axios.post('api/proccess-url', {urlOrig: this.urlOrig})
+        const {data} = await this.$axios.post('api/encode-url', {urlOrig: this.urlOrig})
         this.encryptedUrl = data
         this.shorten = true
 
       } catch (error) {
-
+        throw new Error(error);
+        
       }
     },
     cancelAll() {

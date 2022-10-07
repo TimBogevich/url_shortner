@@ -71,6 +71,7 @@ export default {
   build: {},
   serverMiddleware: [
     bodyParser.json(),
-    {path: '/api/proccess-url', handler: '~/api/short-url.js'}
+    {path: '/api/encode-url', handler: '~/api/encode-url.js'},
+    {path: '/api/decode-url', handler: '~/api/decode-url.js'},
   ]
 }
